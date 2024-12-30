@@ -1,0 +1,521 @@
+@import url('https://fonts.googleapis.com/css2?family=Unlock&display=swap');
+@keyframes slideleft {
+    from {
+        transform: translateX(-300px);
+    }
+    to {
+        transform: translateX(0);
+    }
+
+}
+
+.unlock-regular {
+    font-family: "Unlock", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: "Unlock", serif;
+}
+
+
+body {
+    background-color: black;
+    color: #aaaa;
+}
+
+.container {
+    padding: 1rem;
+    width: 100%;
+    max-width: 1230px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+
+.headers {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+
+.headers .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+}
+
+
+.navigate {
+    display: flex;
+    align-items: center;
+    gap: 1.2rem;
+
+}
+
+.logo-link {
+    font-size: 60px;
+    line-height: 0;
+    color: #597cff;
+    font-weight: 600;
+}
+
+.logo-link strong {
+    font-size: 60px;
+    line-height: 0;
+    color: #fff96c;
+    font-weight: 600;
+}
+.logo-link {
+    padding: 1rem;
+
+}
+
+.navigate form {
+    display: flex;
+    align-items: center;
+    gap: 0.2rem;
+    font-size: 14px;
+    line-height: 14px;
+    color: #d8ceceaa;
+    border: 1px solid rgba(39, 39, 39, 0.667);
+    background-color: #272727;
+    transition: all 1s;
+    border-radius: 1rem;
+    padding: 0.25rem 0.7rem;
+    margin-left: 0.5rem;
+}
+
+.navigate form:hover {
+    background-color: #f5eaeadc;
+    color: #867c7cd0;
+}
+
+.navigate form input {
+    font-size: 14px;
+    padding: 5px;
+    line-height: 14px;
+    border: none;
+    outline: none;
+    background-color: transparent;
+    color: #b99797;
+}
+
+.navigate .link:hover {
+    font-size: 19px;
+    line-height: 17px;
+    color: #fffa6cc9;
+}
+
+.navigate .link {
+    font-size: 19px;
+    line-height: 17px;
+    font-weight: 500;
+    color: #fffefeee;
+}
+
+#menu,#open {
+    display: none;
+}
+
+.homes {
+    width: 100%;
+    min-height: 100vh;
+    background: linear-gradient(to bottom, #97d4f067, rgba(0, 0, 0, 0.753)), url(../images/hpbg2.avif);
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+}
+
+
+.homes .itemscon {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 6rem 0rem;
+    gap: 1.2rem;
+    width: 100%;
+    max-width: 620px;
+}
+
+.homes .titles {
+    font-size: 54px;
+    font-weight: 300;
+    color: #fff;
+}
+
+.homes .titles2 {
+    animation: slideleft 980ms ease-in;
+}
+
+.homes .titles2 {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    font-size: 22px;
+    line-height: 22px;
+    color: #fff;
+}
+
+.homes .titles2 span {
+    width: 120px;
+    height: 3px;
+    background-color: #dbcfcf;
+    display: block;
+}
+
+.homes .buttons {
+    padding: 1rem 0rem;
+}
+
+.homes .bt-learn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 1rem 2.4rem;
+    border: 2px solid #fffa;
+    border-radius: 5px;
+    background-color: #1126e2be;
+    font-size: 16px;
+    line-height: 16px;
+    font-weight: 500;
+    color: #fff;
+    cursor: pointer;
+    transition: all 950ms;
+
+
+}
+
+.homes .bt-learn:hover {
+    background-color: #1e9b06e1;
+    ;
+    color: #f1f1f1;
+
+}
+
+.section {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-top: 6rem;
+
+}
+
+
+.headd .title {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+    font-size: 28px;
+    font-weight: 200;
+    color: #fff;
+}
+
+.headd .title span {
+    height: 4px;
+    width: 140px;
+    background-color: #fff;
+    display: flex;
+}
+
+.destine .items {
+    padding: 2rem 0rem;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2.4rem;
+
+}
+
+.destine .items {
+    width: 100%;
+    position: relative;
+}
+
+.destine .items .image {
+    width: 100%;
+    position: relative;
+    max-height: 460px;
+    overflow: hidden;
+    z-index: 1;
+}
+
+.destine .items .image:hover {
+    
+    box-shadow: 0 0 20px #ffffffc7;
+    transition-duration: all 1.2s;
+    transition-timing-function: ease-out;
+}
+
+
+
+.destine .items .image img {
+    width: 100%;
+    object-fit: cover;
+}
+
+.destine .item .infos {
+    margin-top: -7rem;
+    position: relative;
+    z-index: 10;
+    padding: 0.2rem 1rem;
+    transition: all 1.5s;
+}
+
+.destine .item:hover .infos {
+    margin-top: -0.2rem;
+
+}
+
+.destine .items:hover {
+    margin-top: -0.2rem;
+}
+
+.destine .item .infos .title {
+    font-size: 25px;
+    font-weight: 600;
+    color: #e3f02a;
+}
+
+.destine .item .infos .desc {
+    height: 120px;
+    overflow: hidden;
+    padding: 15px 0px;
+}
+
+.destine .item .infos .desc p {
+    font-size: 17.5px;
+    font-weight: 50;
+    color: #fbfcebf1;
+}
+
+.destine .buttons {
+    padding: 1rem 0rem;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.2rem;
+
+}
+
+.destine .btn-view {
+    padding: 0.66rem 1.4rem;
+    border-radius: 0.19rem;
+    background-color: transparent;
+    border: 2px solid #aaa7;
+    color: #aaa;
+    cursor: pointer;
+    transition: all 1s;
+    font-size: 14px;
+    line-height: 14px;
+    display: flex;
+    font-weight: 500;
+    justify-content: center;
+    gap: 0.5rem;
+    text-transform: capitalize;
+}
+
+.destine .btn-view:hover {
+    background-color: #fff;
+    color: #000;
+
+}
+
+
+.footer .heading {
+    animation: slideleft 980ms ease-in;
+}
+
+.footer .social {
+    animation: slideleft 980ms 35ms ease-in;
+    
+}
+
+.footer .title {
+    font-size: 70px;
+}
+
+.footer .heading .title {
+
+    color: #597cff;
+    font-weight: 600;
+
+}
+
+.footer .heading .title strong {
+
+    color: #fff96c;
+}
+
+.footer {
+    padding-top: 4rem;
+    padding-bottom: 2rem;
+    background-color: #000;
+}
+
+.footer .container {
+    display: flex;
+    flex-direction: column;
+    gap: 1.4rem;
+
+}
+
+.footer .title {
+    font-size: 44px;
+    font-weight: 500;
+    text-align: center;
+    color: #fff;
+
+}
+
+.footer .title strong {
+    font-size: 44px;
+    text-align: center;
+    color: #444;
+
+}
+
+.footer .social {
+    display: flex;
+    justify-content: center;
+    gap: 1.6rem;
+}
+
+.footer .social .link {
+    font-size: 1.5rem;
+    color: #f8f2f2;
+    transition: all 1s;
+}
+
+.footer .social .link:hover {
+    font-size: 1.2rem;
+    color: #fffa6cc9;
+
+}
+
+.footer .desc {
+    padding: 2.6rem 0rem;
+    width: 100%;
+    max-width: 560px;
+    margin: 0 auto;
+}
+
+.footer .desc p {
+    font-size: 16px;
+    line-height: 30px;
+    color: #f1f1f1;
+    text-align: center;
+
+}
+
+.footer .links {
+    display: flex;
+    justify-content: center;
+    gap: 1.4rem;
+}
+
+.footer .links .link {
+    font-size: 16px;
+    line-height: 28px;
+    color: #bbb;
+    text-transform: capitalize;
+}
+
+.footer .links .link:hover {
+    color: #fff;
+    text-decoration: underline;
+}
+
+@media (max-width:780px) {
+    
+    #open {
+        position: absolute;
+        top: 1.4rem;
+        right: 1.4rem;
+        font-size: 1.4rem;
+        color: #aaa;
+        display: block;
+        cursor: pointer;
+        transition: all 1s;
+        padding: 0.2rem 0.2rem;
+        
+    }
+
+
+    #menu {
+        display: block;
+        font-size: 1.4rem;
+        color: #aaa;
+        display: block;
+        cursor: pointer;
+        transition: all 1s;
+        padding: 0.3rem 0.2rem;
+    }
+
+    #menu:hover,#open:hover {
+        
+        color: #fff;
+        background-color: #111;
+    }
+
+
+    .navigate {
+        position: fixed;
+        top: 0;
+        right: -100%;
+        width: 100%;
+        max-width: 420px;
+        min-height: 100vh;
+        background-color: #000000ec;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 1.6rem;
+        transition: all 1s;
+        border-left: 2px solid #ffffff;
+        box-shadow: 0 0 20px #555;
+
+    }
+
+    .navigate.active{
+        position: fixed;
+        top: 0;
+        right: -0%;
+        
+    }
+
+    .navigate form {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        top: 2rem;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+}
+
+input::-webkit-calendar-picker-indicator {
+    display: none;
+    background: transparent;
+    opacity: 0;
+    visibility: hidden;
+}
